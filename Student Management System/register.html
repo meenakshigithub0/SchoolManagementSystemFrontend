@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Management System - Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <h1>School Management System</h1>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="nav-link nav-link-active" href="register.html" aria-current="page">Register</a>
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <div class="page-header">
+        <h2 class="page-title">Student / Teacher Registration</h2>
+        <p class="muted">Register a new student or teacher account (frontend demo).</p>
+      </div>
+
+      <!-- Registration Form -->
+      <form class="form" action="#" method="post" autocomplete="on">
+        <div class="form-group">
+          <label for="reg-name">Name <span aria-hidden="true">*</span></label>
+          <input
+            id="reg-name"
+            name="name"
+            type="text"
+            class="input"
+            placeholder="Full name"
+            required
+            minlength="2"
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-age">Age <span aria-hidden="true">*</span></label>
+          <input
+            id="reg-age"
+            name="age"
+            type="number"
+            class="input"
+            placeholder="e.g. 16"
+            required
+            min="1"
+            max="100"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-class">Class <span aria-hidden="true">*</span></label>
+          <select id="reg-class" name="class" class="input" required>
+            <option value="" selected disabled>Select class</option>
+            <option value="Class 1">Class 1</option>
+            <option value="Class 2">Class 2</option>
+            <option value="Class 3">Class 3</option>
+            <option value="Class 4">Class 4</option>
+            <option value="Class 5">Class 5</option>
+            <option value="Class 6">Class 6</option>
+            <option value="Class 7">Class 7</option>
+            <option value="Class 8">Class 8</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-role">Role <span aria-hidden="true">*</span></label>
+          <select id="reg-role" name="role" class="input" required>
+            <option value="" selected disabled>Select role</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password">Password <span aria-hidden="true">*</span></label>
+          <input
+            id="reg-password"
+            name="password"
+            type="password"
+            class="input"
+            placeholder="Create a password"
+            required
+            minlength="6"
+            autocomplete="new-password"
+          />
+        </div>
+
+        <button class="btn btn-primary" type="submit">Create Account</button>
+
+        <p class="form-foot">
+          Already registered? <a href="login.html" class="link">Login</a>
+        </p>
+
+        <p class="note note-soft">
+          <strong>Demo:</strong> No backend is connected.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© School Management System 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
+

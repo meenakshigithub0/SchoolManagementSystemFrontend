@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Management System - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <h1>School Management System</h1>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="nav-link" href="register.html">Register</a>
+        <a class="nav-link nav-link-active" href="dashboard.html" aria-current="page">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <div class="page-header page-header-row">
+        <div>
+          <h2 class="page-title">Dashboard</h2>
+          <p class="muted">Sample data for demonstration (frontend only).</p>
+        </div>
+        <div class="dash-links" aria-label="Dashboard navigation">
+          <a class="chip" href="#students">Students</a>
+          <a class="chip" href="#teachers">Teachers</a>
+          <a class="chip" href="#classes">Classes</a>
+          <a class="chip" href="#attendance">Attendance</a>
+        </div>
+      </div>
+
+      <!-- Students Table -->
+      <section id="students" class="dash-section">
+        <h3 class="section-title">Students</h3>
+        <div class="table-wrap" role="region" aria-label="Students table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>STU-1001</td>
+                <td>Aarav Sharma</td>
+                <td>Class 6</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>STU-1002</td>
+                <td>Meera Patel</td>
+                <td>Class 5</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>STU-1003</td>
+                <td>Vihaan Singh</td>
+                <td>Class 7</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>STU-1004</td>
+                <td>Anaya Verma</td>
+                <td>Class 6</td>
+                <td>11</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Teachers Table -->
+      <section id="teachers" class="dash-section">
+        <h3 class="section-title">Teachers</h3>
+        <div class="table-wrap" role="region" aria-label="Teachers table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Teacher ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Experience</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TCH-2001</td>
+                <td>R. Kulkarni</td>
+                <td>Mathematics</td>
+                <td>8 yrs</td>
+              </tr>
+              <tr>
+                <td>TCH-2002</td>
+                <td>S. Banerjee</td>
+                <td>Science</td>
+                <td>6 yrs</td>
+              </tr>
+              <tr>
+                <td>TCH-2003</td>
+                <td>K. Iyer</td>
+                <td>English</td>
+                <td>10 yrs</td>
+              </tr>
+              <tr>
+                <td>TCH-2004</td>
+                <td>P. Nair</td>
+                <td>Computer</td>
+                <td>5 yrs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Classes Placeholder -->
+      <section id="classes" class="dash-section">
+        <h3 class="section-title">Classes</h3>
+        <div class="placeholder">
+          <p>
+            Classes management can be added here. This section is intentionally kept as a
+            placeholder because the task only requires table data for Students and Teachers.
+          </p>
+          <div class="placeholder-grid">
+            <div class="placeholder-item">Class 1</div>
+            <div class="placeholder-item">Class 2</div>
+            <div class="placeholder-item">Class 3</div>
+            <div class="placeholder-item">Class 4</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Attendance Placeholder -->
+      <section id="attendance" class="dash-section">
+        <h3 class="section-title">Attendance</h3>
+        <div class="placeholder">
+          <p>
+            Attendance tracking UI can be connected later. For now, this demonstrates a clean
+            dashboard structure.
+          </p>
+          <ul class="bullets">
+            <li>Daily attendance view</li>
+            <li>Monthly reports</li>
+            <li>Export functionality</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© School Management System 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
+
